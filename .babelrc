@@ -1,4 +1,12 @@
 {
   "plugins": ["transform-runtime"],
-  "presets": ["latest"]
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current",
+        "browsers": "> 2%"
+      },
+      "lose": true
+    }]
+  ]
 }
